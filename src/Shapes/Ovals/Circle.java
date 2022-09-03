@@ -36,11 +36,11 @@ public class Circle extends Oval {
 
     @Override
     public double getPerimeter() {
-        return 0;
+        return Math.PI * radius * 2;
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return Math.PI * Math.pow(radius, 2);
     }
 }

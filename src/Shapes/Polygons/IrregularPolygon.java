@@ -2,6 +2,7 @@ package Shapes.Polygons;
 
 import Shapes.Points.Point;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class IrregularPolygon extends Polygon {
@@ -10,7 +11,7 @@ public class IrregularPolygon extends Polygon {
 
     public IrregularPolygon(List<Point> points) {
         super(SHAPE_NAME);
-        this.points = points;
+        this.points = new ArrayList<>(points);
     }
 
     @Override
@@ -29,7 +30,7 @@ public class IrregularPolygon extends Polygon {
     }
 
     public List<Point> getPoints() {
-        return points;
+        return new ArrayList<>(points);
     }
 
     public int getVertexCount() {

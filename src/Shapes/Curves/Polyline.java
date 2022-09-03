@@ -2,6 +2,7 @@ package Shapes.Curves;
 
 import Shapes.Points.Point;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,7 +12,7 @@ public class Polyline extends Curve {
 
     public Polyline(List<Point> points) {
         super(SHAPE_NAME);
-        this.points = points;
+        this.points = new ArrayList<>(points);
     }
 
     public Polyline(Point[] points) {
@@ -23,7 +24,7 @@ public class Polyline extends Curve {
     }
 
     public List<Point> getPoints() {
-        return points;
+        return new ArrayList<>(points);
     }
 
     public int getVertexCount() {

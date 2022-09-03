@@ -44,6 +44,7 @@ public class Ellipse extends Oval {
         this.focusDistance = focusDistance;
     }
 
+    //TODO: Implement perimeter and area
     @Override
     public double getPerimeter() {
         return 0;
